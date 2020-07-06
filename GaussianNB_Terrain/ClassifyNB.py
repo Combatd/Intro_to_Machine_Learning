@@ -5,4 +5,7 @@ def classify(features_train, labels_train):
     ### return the fit classifier
     
     
-    
+    from sklearn.naive_bayes import GaussianNB
+    clf = GaussianNB()
+    clf.fit(features_train, labels_train)
+    return clf
